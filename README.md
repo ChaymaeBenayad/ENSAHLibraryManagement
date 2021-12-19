@@ -5,7 +5,7 @@ Au démarrage de l’application cette fenêtre s’affiche :
 
 ![image](https://user-images.githubusercontent.com/78702422/146660740-28a43d45-4225-43eb-bf1d-dfce51997411.png) 
 
-   ## Utilisateur:
+   ## Etudiant:
   
 	Authentification:
 Une fois on clique sur l’icône « Etudiant » on se redirige vers la page d’authentification.
