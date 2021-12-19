@@ -42,8 +42,8 @@ Une fois l’utilisateur clique sur le bouton « Réserver » cette fenêtre s�
 
 ![image](https://user-images.githubusercontent.com/78702422/146660938-9167dacb-0e15-40b7-99bc-47c4f466d702.png)
 
-Pour faire une réservation,l’utilisateur peut remplir les champs (code, titre, thème) manuellement, comme il peut séléctionner la ligne du tableau où se trouve le livre qui veut réserver.
-Au cas où l’utilisateur séléctionne une ligne du tableau où se trouve le livre qu’il veut réserver, les informations de ce livre (Code,Titre,Thème) seront remplis automatiquement dans les champs correspondants.
+Pour faire une réservation,l’utilisateur peut remplir les champs (code, titre, thème) manuellement, comme il peut sélectionner la ligne du tableau où se trouve le livre qui veut réserver.
+Au cas où l’utilisateur sélectionne une ligne du tableau où se trouve le livre qu’il veut réserver, les informations de ce livre (Code,Titre,Thème) seront remplis automatiquement dans les champs correspondants.
 
 ![image](https://user-images.githubusercontent.com/78702422/146661154-183b671d-1931-4683-b0c0-8db374d62d7e.png)
 
@@ -134,15 +134,15 @@ Une fois on clique sur le bouton « Emprunter Livre », cette fenêtre s’affic
 
 L’administrateur saisit l’id de l’étudiant qui veut emprunter un livre, ensuite il clique sur la clé « Entrer » du clavier pour afficher les informations de cet étudiant. De plus, il saisit l’id du livre à emprunter, ensuite il clique sur la clé « Entrer » du clavier pour afficher les informations du livre.
 Le système vérifie les différents cas :
-<li>Si l’étudiant n’a pas réservé le livre qu’il veut emprunter, un message d’erreur s’affiche:</li>
+<li>Si l’étudiant n’a pas réservé le livre qu’il veut emprunter, un message d’erreur s’affiche:</li></br>
 
 ![image](https://user-images.githubusercontent.com/78702422/146661793-932b877a-e96a-4d3f-83e2-05247401ec60.png)
 
-<li>Si le livre est déjà emprunté par l’étudiant, un message d’erreur s’affiche :</li>
+<li>Si le livre est déjà emprunté par l’étudiant, un message d’erreur s’affiche :</li></br>
 
 ![image](https://user-images.githubusercontent.com/78702422/146661801-5ef9e4fd-e4ce-4e2f-8bfa-8289c0af9957.png)
 
-<li>Si les informations saisies sont correctes, on affiche ce message :</li>
+<li>Si les informations saisies sont correctes, on affiche ce message :</li></br>
 
 ![image](https://user-images.githubusercontent.com/78702422/146661883-08421f1b-cef9-4e8e-8bfc-29eb4e832b10.png)
 
@@ -161,11 +161,11 @@ Une fois on clique sur le bouton « Retourner Livre », cette fenêtre s’affic
 
 
 L’administrateur doit saisir l’ID du livre et l’ID de l’étudiant pour retourner le livre emprunté, ensuite il doit cliquer sur le bouton « Entrer » pour afficher les informations relatives au livre emprunté et à l’étudiant. Le système vérifie les cas suivants :
-<li>Si le livre qu’on veut retourner n’est pas emprunté, un message d’erreur s’affiche :</li>
+<li>Si le livre qu’on veut retourner n’est pas emprunté, un message d’erreur s’affiche :</li></br>
 
 ![image](https://user-images.githubusercontent.com/78702422/146661933-c7b018d3-1946-46b0-ac26-c1e35ac0ee50.png)
 
-<li>Si le livre qu’on veut retourner existe dans la table des livres empruntés, les informations relatives au livre et à l’étudiant s’affichent :</li>
+<li>Si le livre qu’on veut retourner existe dans la table des livres empruntés, les informations relatives au livre et à l’étudiant s’affichent :</li></br>
 
 ![image](https://user-images.githubusercontent.com/78702422/146661947-cc33ffaf-824d-40d9-ab6c-6f1384324d5c.png)
 
@@ -176,19 +176,3 @@ Une fois on clique sur le bouton « Retourner », ce message s’affiche :
 Après le retour du livre, il va être retiré de la table des livres empruntés :
 
 ![image](https://user-images.githubusercontent.com/78702422/146661961-525aec7e-79a3-430d-b435-aeebcdd342ce.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
