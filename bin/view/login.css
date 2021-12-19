@@ -1,0 +1,41 @@
+.parent{
+    -fx-background-color:transparent;
+}
+
+.pane{
+	-fx-background-color: #333333;
+	}
+	
+	#pane{
+	-fx-background-color: #ffff;			
+	}
+	
+	.jfx-button{
+	-fx-background-color: transparent;
+	-fx-background-radius:5px;
+	-fx-border-color:#cccccc;
+	-fx-border-radius:5px;
+	} 
+	.jfx-button:hover{
+	-fx-cursor:hand;
+	} 
+	.white-pane{
+	-fx-background-color:#ffff;
+	}
+	.tf_box{
+    -fx-background-color:transparent;
+    -fx-border-color:#DEDEE4;
+    -fx-border-width:0px 0px 1px 0px;    
+}
+.tf{
+    -fx-background-color:transparent;    
+}
+.pink-btn{
+ -fx-background-color:  #FFDE00;
+    -fx-background-radius:5px;
+  -fx-text-fill: black;
+}
+.label{
+	 -fx-color:#575252;
+	
+}

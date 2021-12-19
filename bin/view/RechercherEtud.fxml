@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="880.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RechercherEtudiantController">
+   <children>
+      <TableView fx:id="tabEtud" layoutX="20.0" layoutY="149.0" prefHeight="239.0" prefWidth="586.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="170.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="84.0" text="ID Etudiant" />
+            <TableColumn fx:id="CNECol" prefWidth="103.0" text="CNE" />
+          <TableColumn fx:id="nomCol" prefWidth="113.0" text="Nom" />
+            <TableColumn fx:id="prenomCol" prefWidth="119.0" text="Prénom" />
+            <TableColumn fx:id="emailCol" prefWidth="258.0" text="Email" />
+            <TableColumn fx:id="teleCol" prefWidth="115.0" text="Téléphone" />
+            <TableColumn fx:id="etatCol" prefWidth="77.0" text="Etat" />
+        </columns>
+      </TableView>
+      <Pane layoutY="7.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="17.0" prefHeight="47.0" prefWidth="439.0" text="Affichage Des Etudiants">
+               <font>
+                  <Font name="Segoe UI" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="filterField" layoutX="210.0" layoutY="108.0" prefHeight="31.0" prefWidth="439.0" promptText="    Rechercher" styleClass="textLab" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="108.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="649.0" layoutY="108.0" prefHeight="31.0" prefWidth="33.0" styleClass="btn" AnchorPane.rightAnchor="205.0" />
+      <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="649.0" layoutY="130.0" size="20" />
+   </children>
+   <stylesheets>
+      <URL value="@affichageLivres.css" />
+      <URL value="@rechercher.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="740.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerProfil">
+   <children>
+      <ImageView fitHeight="273.0" fitWidth="431.0" layoutX="282.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/profil.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="150.0" layoutY="162.0" prefHeight="30.0" prefWidth="128.0" text="Nom             :" textFill="#000066" AnchorPane.leftAnchor="190.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="211.0" prefHeight="30.0" prefWidth="128.0" text="Prenom       :" textFill="#000066" AnchorPane.leftAnchor="190.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="118.0" prefHeight="30.0" prefWidth="128.0" text="CNE              :" textFill="#000066" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="118.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="366.0" prefHeight="30.0" prefWidth="128.0" text="Etat              :" textFill="#000066" AnchorPane.leftAnchor="190.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="261.0" prefHeight="30.0" prefWidth="128.0" text="Email           :" textFill="#000066" AnchorPane.leftAnchor="190.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="309.0" prefHeight="30.0" prefWidth="128.0" text="Téléphone :" textFill="#000066" AnchorPane.leftAnchor="190.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="cne" layoutX="318.0" layoutY="118.0" prefHeight="30.0" prefWidth="269.0" AnchorPane.leftAnchor="318.0" AnchorPane.topAnchor="118.0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Label fx:id="nom" layoutX="318.0" layoutY="162.0" prefHeight="30.0" prefWidth="269.0" AnchorPane.leftAnchor="318.0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font></Label>
+      <Label fx:id="prenom" layoutX="318.0" layoutY="211.0" prefHeight="30.0" prefWidth="269.0" AnchorPane.leftAnchor="318.0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font></Label>
+      <Label fx:id="email" layoutX="318.0" layoutY="261.0" prefHeight="30.0" prefWidth="269.0" AnchorPane.leftAnchor="318.0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font></Label>
+      <Label fx:id="numTel" layoutX="318.0" layoutY="309.0" prefHeight="30.0" prefWidth="269.0" AnchorPane.leftAnchor="318.0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font></Label>
+      <Label fx:id="etat" layoutX="318.0" layoutY="366.0" prefHeight="30.0" prefWidth="269.0" AnchorPane.leftAnchor="318.0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font></Label>
+      <AnchorPane layoutX="-2.0" layoutY="37.0" prefHeight="80.0" prefWidth="597.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="17.0" prefHeight="47.0" prefWidth="275.0" text="Mon compte">
+               <font>
+                  <Font name="Segoe UI" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

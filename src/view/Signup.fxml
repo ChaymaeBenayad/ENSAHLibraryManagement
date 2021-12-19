@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="386.0" styleClass="white-pane" stylesheets="@login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Inscription">
+   <children>
+      <Label prefHeight="30.0" prefWidth="132.0" text="Inscription" textFill="#544d4d">
+         <VBox.margin>
+            <Insets bottom="30.0" left="140.0" right="3.0" />
+         </VBox.margin>
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="2.0" />
+         </VBox.margin>
+         <children>
+            <TextField fx:id="nom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="360.0" promptText="Nom" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+            <FontAwesomeIcon fill="#e1dada" glyphName="USER" size="1.5em" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <children>
+            <TextField fx:id="prenom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="360.0" promptText="Prénom " styleClass="tf">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+            <FontAwesomeIcon fill="#e1dada" glyphName="USER" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="6.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fx:id="CNE" alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <children>
+            <TextField fx:id="CNE1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="360.0" promptText="CNE" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+            <FontAwesomeIcon fill="#e1dada" glyphName="USER" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="6.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <children>
+            <TextField fx:id="email" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="360.0" promptText="Email" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon fill="#e1dada" glyphName="USER" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="6.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <children>
+            <TextField fx:id="Numtel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="360.0" promptText="Num de téléphone " styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon fill="#e1dada" glyphName="USER" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="6.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="368.0" styleClass="tf_box" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <children>
+            <PasswordField fx:id="Pss" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mot de passe" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon fill="#e1dada" glyphName="LOCK" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="6.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="368.0" styleClass="tf_box" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <children>
+            <PasswordField fx:id="ComfPss" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Confirmer mot de passe" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon fill="#e1dada" glyphName="LOCK" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="6.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="368.0" styleClass="tf" stylesheets="@login.css">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton onAction="#Signin" prefHeight="35.0" prefWidth="353.0" styleClass="pink-btn" text="S'inscrire" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

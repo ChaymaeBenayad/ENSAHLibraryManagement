@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="990.0" style="-fx-background-color: #ffffff;" stylesheets="@Home.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Home">
+   <children>
+      <VBox layoutY="6.0" prefHeight="726.0" prefWidth="250.0" style="-fx-background-color: #000066;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="144.0" prefWidth="250.0" style="-fx-background-color: #FFDE00;">
+               <children>
+                  <ImageView fitHeight="96.0" fitWidth="100.0" layoutX="77.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/etu.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="username" alignment="CENTER" layoutX="4.0" layoutY="111.0" prefHeight="27.0" prefWidth="246.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#acceuil" prefHeight="65.0" prefWidth="250.0" text="Accueil">
+               <graphic>
+                  <FontAwesomeIcon caretBias="false" fill="WHITE" glyphName="HOME" size="20">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#showProfil" prefHeight="65.0" prefWidth="266.0" text="Mon compte" VBox.vgrow="ALWAYS">
+           
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#updatePass" prefHeight="65.0" prefWidth="267.0" text="Changer mot de passe">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="EDIT" size="20">
+                     <font>
+                        <Font size="32.0" />
+                     </font></FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#Reserver" prefHeight="65.0" prefWidth="266.0" text="Réserver">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#MesReserv" prefHeight="65.0" prefWidth="265.0" text="Livres réservés">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="TH_LIST" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#Mesemprun" prefHeight="65.0" prefWidth="268.0" text="Livres empruntés">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="LIST_UL" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#Deconnecter" prefHeight="65.0" prefWidth="272.0" text="Se déconnecter">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" size="20" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="rootPane" layoutX="250.0" prefHeight="690.0" prefWidth="740.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="36.0" />
+      <FontAwesomeIcon fx:id="btnFermer" fill="#7c7979" glyphName="CLOSE" layoutX="960.0" layoutY="21.0" onMouseClicked="#quitter" size="20">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
+   </children>
+</AnchorPane>

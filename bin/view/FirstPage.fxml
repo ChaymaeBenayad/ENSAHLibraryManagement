@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="744.0" styleClass="pane" stylesheets="@First.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FirstPage">
+   <children>
+      <ImageView fitHeight="612.0" fitWidth="918.0" layoutX="-170.0" layoutY="-92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/FirstPage.PNG" />
+         </image>
+      </ImageView>
+      <Button layoutX="154.0" layoutY="123.0" mnemonicParsing="false" onAction="#ToAdmin" prefHeight="194.0" prefWidth="191.0" styleClass="btn" textFill="#d8d8d8">
+         <graphic>
+            <ImageView fitHeight="130.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/admin.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="438.0" layoutY="123.0" mnemonicParsing="false" onAction="#ToUser" prefHeight="194.0" prefWidth="191.0" styleClass="btn">
+         <graphic>
+            <ImageView fitHeight="130.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/etu.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="200.0" layoutY="343.0" prefHeight="56.0" prefWidth="100.0" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="343.0" prefHeight="56.0" prefWidth="133.0" text="Etudiant" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="47.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

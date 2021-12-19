@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="740.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerProfil">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="37.0" prefHeight="80.0" prefWidth="597.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="17.0" prefHeight="30.0" prefWidth="245.0" text="Accueil">
+               <font>
+                  <Font name="Segoe UI" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="507.0" fitWidth="624.0" layoutX="27.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/acceuil.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="439.0" layoutY="240.0" prefHeight="53.0" prefWidth="212.0" text="BIENVENUE SUR" textFill="#584bb5">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="345.0" prefHeight="45.0" prefWidth="102.0" text="ENSAH" textFill="#584bb5">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="293.0" prefHeight="45.0" prefWidth="195.0" text="BIBLIOTECH" textFill="#584bb5">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

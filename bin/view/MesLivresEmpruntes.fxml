@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="740.0" style="-fx-background-color: #ffffff;" stylesheets="@affichageLivres.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MesLivresEmpruntes">
+   <children>
+      <ImageView fitHeight="270.0" fitWidth="380.0" layoutX="360.0" layoutY="418.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icons/Emprun.PNG" />
+         </image>
+      </ImageView>
+      <TableView fx:id="livreEmprunteTab" layoutX="5.0" layoutY="158.0" prefHeight="251.0" prefWidth="730.0" AnchorPane.bottomAnchor="331.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="141.0">
+        <columns>
+          <TableColumn fx:id="idLivreCol" prefWidth="60.0" text="ID Livre" />
+            <TableColumn fx:id="titreCol" prefWidth="136.0" text="Titre" />
+            <TableColumn fx:id="auteurCol" prefWidth="116.0" text="Auteur" />
+            <TableColumn fx:id="themeCol" prefWidth="151.0" text="Thème" />
+            <TableColumn fx:id="dateEmpruntCol" prefWidth="146.0" text="Date d'emprunt" />
+            <TableColumn fx:id="dateRetourCol" prefWidth="120.0" text="Date de retour" />
+        </columns>
+      </TableView>
+      <Pane layoutX="22.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="17.0" prefHeight="47.0" prefWidth="414.0" text="Mes Livres Empruntés">
+               <font>
+                  <Font name="Segoe UI" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

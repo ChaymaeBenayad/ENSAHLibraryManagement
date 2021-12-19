@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="740.0" style="-fx-background-color: #ffffff;" stylesheets="@affichageLivres.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MesReservations">
+   <children>
+      <ImageView fitHeight="293.0" fitWidth="370.0" layoutX="365.0" layoutY="412.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icons/reserve.PNG" />
+         </image>
+      </ImageView>
+      <TableView fx:id="livre" layoutX="5.0" layoutY="141.0" prefHeight="233.0" prefWidth="730.0" AnchorPane.bottomAnchor="331.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="141.0">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="62.0" text="ID Livre" />
+          <TableColumn fx:id="titreColumne" prefWidth="152.0" text="Titre" />
+          <TableColumn fx:id="auteurCol" prefWidth="140.0" text=" Auteur" />
+          <TableColumn fx:id="themeColumne" prefWidth="152.0" text="Thème" />
+            <TableColumn fx:id="dateReservationCol" prefWidth="160.0" text="Date Réservation" />
+        </columns>
+      </TableView>
+      <Pane layoutX="5.0" layoutY="7.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="17.0" prefHeight="47.0" prefWidth="383.0" text="Mes Livres Réservés">
+               <font>
+                  <Font name="Segoe UI" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

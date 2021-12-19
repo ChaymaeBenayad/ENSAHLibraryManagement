@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SeConnecterAdmin">
+   <children>
+      <Pane prefHeight="549.0" prefWidth="745.0" styleClass="pane" stylesheets="@login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="555.0" fitWidth="376.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Library.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="599.0" fitWidth="550.0" layoutX="362.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Library.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" layoutX="346.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="386.0" styleClass="white-pane" stylesheets="@login.css">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="157.0" text="Se Connecter" textFill="#544d4d">
+                     <VBox.margin>
+                        <Insets bottom="70.0" left="120.0" right="3.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@login.css">
+                     <cursor>
+                        <Cursor fx:constant="SW_RESIZE" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="nom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="360.0" promptText="Nom d’utilisateur " styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <FontAwesomeIcon fill="#e1dada" glyphName="USER" size="1.5em" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="368.0" styleClass="tf_box" stylesheets="@login.css">
+                     <cursor>
+                        <Cursor fx:constant="SW_RESIZE" />
+                     </cursor>
+                     <children>
+                        <PasswordField fx:id="PssF" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mot de passe" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </PasswordField>
+                        <FontAwesomeIcon fill="#e1dada" glyphName="LOCK" size="1.5em" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="47.0" prefWidth="356.0" styleClass="tf" stylesheets="@login.css">
+                     <cursor>
+                        <Cursor fx:constant="SW_RESIZE" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXButton onAction="#login" prefHeight="47.0" prefWidth="352.0" styleClass="pink-btn" text="Connexion" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="26.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label layoutX="102.0" layoutY="167.0" text="Bienvenue " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

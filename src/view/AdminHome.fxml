@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="RootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1130.0" style="-fx-background-color: #ffffff;" stylesheets="@adminHome.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomeController">
+   <children>
+      <FontAwesomeIcon fx:id="btnFermer" fill="#7c7979" glyphName="CLOSE" layoutX="1100.0" layoutY="21.0" onMouseClicked="#closeWindow" selectionFill="BLACK" size="20">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
+      <VBox prefHeight="463.0" prefWidth="250.0" style="-fx-background-color: #000066;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="144.0" prefWidth="250.0" style="-fx-background-color: #FFDE00;">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="87.0" layoutX="82.0" layoutY="22.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../icons/admin.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="110.0" text="ADMIN">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#loadAccueil" prefHeight="60.0" prefWidth="250.0" text="Accueil" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" onAction="#loadAfficherLivres" prefHeight="60.0" prefWidth="250.0" text="Livres" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="60.0" onAction="#loadAfficherEtudiants" prefHeight="60.0" prefWidth="250.0" text="Etudiants" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="110.0" onAction="#loadAjouterLivre" prefHeight="60.0" prefWidth="250.0" text="Ajouter Livre" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="160.0" onAction="#loadEmprunterLivre" prefHeight="60.0" prefWidth="250.0" text="Emprunter Livre" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="CHECK_CIRCLE" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="210.0" onAction="#loadRetournerLivre" prefHeight="60.0" prefWidth="250.0" text="Retourner Livre" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="REPLY" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="260.0" onAction="#loadLivresEmpruntes" prefHeight="60.0" prefWidth="250.0" text="Livres Empruntés" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="TH_LIST" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="310.0" onAction="#loadLivresReserves" prefHeight="60.0" prefWidth="250.0" text="Livres Réservés" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="LIST_UL" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="360.0" onAction="#loadSeDeconnecter" prefHeight="60.0" prefWidth="250.0" text="Se déconnecter" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" size="20">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <AnchorPane fx:id="rootPane" layoutX="250.0" layoutY="36.0" prefHeight="690.0" prefWidth="895.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0">
+         <children>
+            <Pane prefHeight="80.0" prefWidth="343.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Pane layoutY="6.0" prefHeight="80.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="74.0" layoutY="17.0" prefHeight="47.0" prefWidth="209.0" text="Accueil">
+                     <font>
+                        <Font name="Segoe UI" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <CubicCurve controlX1="370.0" controlX2="3.0" controlY1="144.8572998046875" controlY2="5.96160888671875" endX="121.0" endY="324.0" fill="WHITE" layoutX="214.0" layoutY="366.0" startX="148.097412109375" startY="-285.0" stroke="#000066" />
+            <Label alignment="CENTER" layoutX="12.0" layoutY="158.0" prefHeight="99.0" prefWidth="376.0" text="B I E N V E N U E ">
+               <font>
+                  <Font name="Georgia" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="144.0" layoutY="243.0" prefHeight="85.0" prefWidth="111.0" text="SUR">
+               <font>
+                  <Font name="Georgia" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="124.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/91d93ead-fa24-41c4-b29f-7c0b9e917cbb_200x200.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="135.0" layoutY="483.0" text="BIBLIOTECH" textFill="#000066">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="155.0" layoutY="516.0" text="E N S A H" textFill="#000066">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="525.0" fitWidth="440.0" layoutX="440.0" layoutY="120.0" pickOnBounds="true" AnchorPane.bottomAnchor="45.0" AnchorPane.topAnchor="120.0">
+               <image>
+                  <Image url="@../icons/undraw_product_iteration_kjok%20(1).png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

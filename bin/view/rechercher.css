@@ -1,0 +1,18 @@
+.textLab{
+   -fx-font-family: "Quicksand";
+   -fx-padding: 5;
+   -fx-border-color: #4d4d4d;
+   -fx-border-width: 1;
+   -fx-border-radius: 50px 0px 0px 50px;
+   -fx-border: gone;
+   -fx-background-color: transparent;
+}
+.btn{
+	-fx-border-color: transparent;
+   -fx-border-width: 1;
+ /*  -fx-border-radius: 50%;*/ 
+    -fx-border: gone;
+   -fx-background-color: #000066;
+   -fx-cursor:hand;
+   -fx-text-fill: #000066;
+}

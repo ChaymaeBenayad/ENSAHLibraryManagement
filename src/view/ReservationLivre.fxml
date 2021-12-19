@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="740.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Réserver">
+   <children>
+      <TableView fx:id="livre" layoutX="6.0" layoutY="258.0" prefHeight="215.0" prefWidth="680.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="350.0">
+        <columns>
+          <TableColumn fx:id="IdLivre" prefWidth="45.0" text="Code" />
+          <TableColumn fx:id="titre" prefWidth="125.0" text="Titre" />
+            <TableColumn fx:id="auteur" prefWidth="94.0" text="Auteur" />
+            <TableColumn fx:id="editeur" prefWidth="102.0" text="Editeur" />
+            <TableColumn fx:id="theme" prefWidth="140.0" text="Thème" />
+            <TableColumn fx:id="langue" prefWidth="75.0" text="Langue" />
+            <TableColumn fx:id="ISBN" prefWidth="74.0" text="ISBN" />
+            <TableColumn fx:id="nbPages" prefWidth="74.0" text="Pages" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="Theme" focusColor="#13139a" labelFloat="true" layoutX="263.0" layoutY="80.0" prefHeight="34.0" prefWidth="214.0" promptText="Thème" AnchorPane.topAnchor="165.0" />
+      <JFXTextField fx:id="labelCode" focusColor="#13139a" labelFloat="true" layoutX="97.0" layoutY="24.0" prefHeight="34.0" prefWidth="214.0" promptText="Code" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="labelTitre" focusColor="#13139a" labelFloat="true" layoutX="399.0" layoutY="24.0" prefHeight="34.0" prefWidth="214.0" promptText="Titre" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnvider" layoutX="365.0" layoutY="143.0" onAction="#vider" prefHeight="53.0" prefWidth="273.0" styleClass="btn2" text="Vider" AnchorPane.topAnchor="228.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRéserver" layoutX="105.0" layoutY="143.0" onAction="#reserver" prefHeight="53.0" prefWidth="273.0" styleClass="btn1" text="Réserver" AnchorPane.topAnchor="228.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="335.0" layoutY="218.0" prefHeight="32.0" prefWidth="42.0" styleClass="btn" AnchorPane.topAnchor="303.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="filterField" layoutX="4.0" layoutY="218.0" prefHeight="0.0" prefWidth="331.0" promptText="      Rechercher" styleClass="textLab" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="303.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="347.0" layoutY="326.0" size="20" text="" wrappingWidth="18.571428298950195" />
+      <Pane layoutX="5.0" layoutY="5.0" prefHeight="80.0" prefWidth="740.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="17.0" prefHeight="47.0" prefWidth="364.0" text="Réserver Un Livre">
+               <font>
+                  <Font name="Segoe UI" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@btns.css" />
+      <URL value="@affichageLivres.css" />
+      <URL value="@rechercher.css" />
+   </stylesheets>
+</AnchorPane>

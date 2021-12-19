@@ -1,0 +1,93 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+	
+.btn1{
+	-fx-background-color:  #FFDE00;	
+	-fx-text-fill: black;	
+}
+.btn1:hover{
+	-fx-background-color: #000066;
+	-fx-text-fill: white;
+	-fx-cursor:hand;
+}
+.btn2{
+	-fx-background-color: #000066;
+		-fx-text-fill: white;
+}
+.btn2:hover{
+	-fx-background-color:  #FFDE00;
+	-fx-text-fill: black;	
+		-fx-cursor:hand;
+}
+
+.combo-box .list-view:hover{
+	 -fx-background-color:#FFDE00;
+		
+}
+.combo-box .list-view .list-cell{
+	 -fx-font-size:14px;
+	
+}
+.combo-box .list-view .list-cell:hover{
+	 -fx-background-color:#000066;
+	 -fx-text-fill:white;
+	 -fx-cursor:hand;
+	
+}
+.combo-box .list-view .list-cell:filled:selected{
+	 -fx-background-color:#000066;
+	 -fx-text-fill:white;
+	
+}
+.combo-box .list-view .virtual-flow .scroll-bar:vertical,
+.combo-box .list-view .virtual-flow .scroll-bar:vertical .track,
+.combo-box .list-view .virtual-flow .scroll-bar:vertical .track-background,
+.combo-box .list-view .virtual-flow .scroll-bar:horizontal,
+.combo-box .list-view .virtual-flow .scroll-bar:horizontal .track,
+.combo-box .list-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.combo-box .list-view .virtual-flow .scroll-bar .increment-button,
+.combo-box .list-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.combo-box .list-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #EEEEEE, #E0E0E0);
+}
+.combo-box .list-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #EEEEEE, #E0E0E0);
+}
+
+.list-view .list-cell:even {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+}
+.list-view .list-cell:odd {
+	-fx-background-color: white;
+	-fx-text-fill:  black;
+}
+.list-view .virtual-flow .scroll-bar:vertical,
+.list-view .virtual-flow .scroll-bar:vertical .track,
+.list-view .virtual-flow .scroll-bar:vertical .track-background,
+.list-view .virtual-flow .scroll-bar:horizontal,
+.list-view .virtual-flow .scroll-bar:horizontal .track,
+.list-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.list-view .virtual-flow .scroll-bar .increment-button,
+.list-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.list-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #EEEEEE, #E0E0E0);
+}
+.list-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #EEEEEE, #E0E0E0);
+}
+
+	

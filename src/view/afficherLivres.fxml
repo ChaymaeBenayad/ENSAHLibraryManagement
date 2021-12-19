@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="880.0" style="-fx-background-color: #ffffff;" stylesheets="@affichageLivres.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsulterLivresController">
+   <children>
+      <Pane layoutX="26.0" layoutY="7.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #FFDE00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="52.0" prefWidth="431.0" text="Affichage Des Livres">
+               <font>
+                  <Font name="Segoe UI" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="livreTab" editable="true" prefHeight="368.0" prefWidth="893.0" style="-fx-alignment: center;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="130.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="titreCol" prefWidth="110.0" text="Titre" />
+            <TableColumn fx:id="auteurCol" prefWidth="100.0" text="Auteur" />
+            <TableColumn fx:id="editeurCol" prefWidth="95.0" text="Editeur" />
+            <TableColumn fx:id="themeCol" prefWidth="107.0" text="Thème" />
+            <TableColumn fx:id="langueCol" prefWidth="60.0" text="Langue" />
+            <TableColumn fx:id="ISBNCol" prefWidth="90.0" text="ISBN" />
+            <TableColumn fx:id="nbPagesCol" prefWidth="58.0" text="Pages" />
+            <TableColumn fx:id="quantiteCol" prefWidth="64.0" text="Quantité" />
+            <TableColumn fx:id="etatCol" prefWidth="76.0" text="Etat" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
